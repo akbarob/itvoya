@@ -70,11 +70,11 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="w-full justify-between items-center flex mt-12 gap-4">
+                <div className="text-black w-full justify-between items-center flex mt-12 gap-4">
                     <div className="w-[48%] h-full bg-white rounded-[8px] p-5">
                         <div className="w-full flex  justify-between items-center mb-4">
                             <div className="flex flex-col justify-start items-start">
-                                <p className="font-semibold capitalize">
+                                <p className="font-semibold capitalize text-black">
                                     Top Subjects
                                 </p>
                                 <p className="text-[14px]">Per class</p>
@@ -96,7 +96,9 @@ export default function Home() {
                     <div className="w-[48%] h-full bg-white rounded-[8px] p-5">
                         <div className="w-full flex  justify-between items-center">
                             <div className="flex flex-col justify-start items-start">
-                                <p className="font-semibold">Performance</p>
+                                <p className="font-semibold text-black">
+                                    Performance
+                                </p>
                                 <p className="text-[14px]">Per term</p>
                             </div>
                             <div className="fle flex-col justify-start items-start mb-4">
