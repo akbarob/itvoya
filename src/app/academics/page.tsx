@@ -18,11 +18,19 @@ export default function Home() {
     return (
         <Dashboardlayout>
             <div className="flex flex-col w-full">
-                <div>
+                <div className="flex mb-5 justify-between w-full items-center ">
                     <Breadcrumb route="Academics & Results" />
+                    <div className="flex gap-2 justify-center items-center text-black">
+                        <label className="text-[12px]  ">Select Term</label>
+                        <select className="w-[200px] h-[40px] rounded-[6px] bg-transparent border border-gray">
+                            <option>2023/2024</option>
+                            <option>2022/2023</option>
+                            <option>2021/2022</option>
+                        </select>
+                    </div>
                 </div>
                 <div className="grid grid-cols-3 w-full justify-between items-center gap-8 mx-auto mb-5">
-                    <FirstBox title="All SUbjetcs" digit={43} icon={"laptop"} />
+                    <FirstBox title="All Subjetcs" digit={43} icon={"laptop"} />
                     <FirstBox title="Active class" digit={43} icon={"active"} />
                     <FirstBox
                         title="Inactive classes"

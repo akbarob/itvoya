@@ -68,13 +68,21 @@ export default function Page() {
     return (
         <Dashboardlayout>
             <div>
-                <div>
+                <div className="flex mb-5 justify-between w-full items-center">
                     <Breadcrumb
                         route="Academics & Results"
                         sroute={"subject"}
                     />
+                    <div className="flex gap-2 justify-center items-center text-black">
+                        <label className="text-[12px]  ">Select Term</label>
+                        <select className="w-[200px] h-[40px] rounded-[6px] bg-transparent border border-gray">
+                            <option>2023/2024</option>
+                            <option>2022/2023</option>
+                            <option>2021/2022</option>
+                        </select>
+                    </div>
                 </div>
-                <div className="bg-white rounded-[8px] w-full p-4 mx-auto">
+                <div className="bg-white text-black rounded-[8px] w-full p-4 mx-auto">
                     <div className="flex justify-between  mb-3 w-full flex-1 p-2">
                         <div className="flex  items-center ">
                             <p>All subjects</p>

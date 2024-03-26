@@ -43,7 +43,7 @@ export default function InputField({
             <input
                 type={type}
                 placeholder={placeholder}
-                className="bg-transparent"
+                className="bg-transparent w-full outline-none focus:outline-none border-none focus:border-none"
                 id={name}
             />
         </div>

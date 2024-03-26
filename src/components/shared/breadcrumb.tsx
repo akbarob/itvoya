@@ -11,7 +11,7 @@ type Props = {
 
 export default function Breadcrumb({ route, sroute, broute }: Props) {
     return (
-        <div className="flex mb-5 text-gray text-[14px]">
+        <div className="flex  text-gray text-[14px]">
             <span className="flex justify-center items-center">
                 Home{" "}
                 <Image

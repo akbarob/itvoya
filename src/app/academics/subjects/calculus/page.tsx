@@ -53,12 +53,20 @@ export default function Page() {
     return (
         <Dashboardlayout>
             <div className="flex flex-col w-full">
-                <div>
+                <div className="flex mb-5 w-full justify-between items-center">
                     <Breadcrumb
                         route="Academics & Results"
                         sroute="subject"
                         broute="calculus"
                     />
+                    <div className="flex gap-2 justify-center items-center text-black">
+                        <label className="text-[12px]  ">Select Term</label>
+                        <select className="w-[200px] h-[40px] rounded-[6px] bg-transparent border border-gray">
+                            <option>2023/2024</option>
+                            <option>2022/2023</option>
+                            <option>2021/2022</option>
+                        </select>
+                    </div>
                 </div>
                 <div className="mb-4">
                     <p className="text-[32px] font-semibold text-black">
@@ -105,9 +113,9 @@ export default function Page() {
                                 icon={"teachers"}
                             />
                         </div>
-                        <div className="grid grid-cols-2 gap-4 r">
+                        <div className="grid grid-cols-2 gap-4 text-black">
                             <div className="w-full rounded-[6px] bg-white p-4">
-                                <p className="text-[20px] font-semibold">
+                                <p className="text-[18px] font-semibold text-black mb-2">
                                     Teachers
                                 </p>
                                 <div className="gap-2 h-[56px] bg-[#00004A] text-white w-full justify-start items-center grid grid-cols-2 px-2 place-content-center place-items-center">
@@ -146,7 +154,7 @@ export default function Page() {
                                 ))}
                             </div>
                             <div className="w-full bg-white p-4">
-                                <p className="text-[20px] font-semibold">
+                                <p className="text-[18px] text-black mb-2 font-semibold">
                                     Classes
                                 </p>
                                 <div className="gap-2 h-[56px] bg-[#00004A] text-white w-full justify-start items-center grid grid-cols-2 px-2 place-content-center place-items-center">
@@ -201,9 +209,11 @@ export default function Page() {
                 )}
                 {active === 2 && (
                     <div>
-                        <div className="flex gap-4 my-2">
+                        <div className="flex gap-4 my-2 text-black">
                             <div className="flex flex-col">
-                                <label>Select Term</label>
+                                <label className="text-[12px] mb-2">
+                                    Select Term
+                                </label>
                                 <select className="w-[200px] h-[40px] bg-white rounded-[6px]">
                                     <option>First Term</option>
                                     <option>Second Term</option>
@@ -211,7 +221,9 @@ export default function Page() {
                                 </select>
                             </div>
                             <div className="flex flex-col">
-                                <label>Select Week</label>
+                                <label className="text-[12px] mb-2 text-">
+                                    Select Term
+                                </label>
                                 <select className="w-[200px] h-[40px] bg-white rounded-[6px]">
                                     <option>Week 1</option>
                                     <option>Week 2</option>
@@ -222,7 +234,7 @@ export default function Page() {
                         <div className="gap-2 flex justify-between w-full my-[32px]">
                             <div className="flex gap-2">
                                 {" "}
-                                <button className="flex gap-2 justify-center bg-warning/10 text-warning  px-4 py-2 rounded-[6px]">
+                                <button className="flex gap-2 justify-center items-center bg-warning/10 text-warning  px-4 py-2 rounded-[6px]">
                                     {" "}
                                     <Image
                                         src={`/assets/images/warning.png`}
@@ -237,7 +249,7 @@ export default function Page() {
                                         Outstanding Assignments (2)
                                     </p>
                                 </button>
-                                <button className="flex gap-2 justify-center bg-error/10 text-error  px-4 py-2 rounded-[6px]">
+                                <button className="items-center flex gap-2 justify-center bg-error/10 text-error  px-4 py-2 rounded-[6px]">
                                     {" "}
                                     <Image
                                         src={`/assets/images/error.png`}
@@ -255,7 +267,7 @@ export default function Page() {
                             </div>
 
                             <div>
-                                <button className="flex gap-2 justify-center bg-primary text-white px-4 py-2 rounded-[6px]">
+                                <button className="flex gap-2 justify-center items-center bg-primary text-white px-4 py-2 rounded-[6px]">
                                     {" "}
                                     <Image
                                         src={`/assets/images/add.svg`}
@@ -294,7 +306,7 @@ export default function Page() {
                             />{" "}
                             <p> Upload New Material</p>
                         </button>
-                        <div className="bg-white p-4 mt-12">
+                        <div className="bg-white text-black p-4 mt-12">
                             <p className="mb-3">Uploaded Files</p>
                             <div className="gap-2 h-[56px] bg-[#00004A] text-white w-full justify-start items-center grid grid-cols-2 px-2 place-content-center place-items-center">
                                 <div className="w-full capitalize flex gap-2 items-center justify-start ">
