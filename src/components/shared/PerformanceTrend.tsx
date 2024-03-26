@@ -39,11 +39,11 @@ const PerformanceTrend = () => {
                             {
                                 label: "Trend",
                                 data: [60, 95, 60, 100],
-                                backgroundColor: "blue",
-                                fill: "blue",
+                                backgroundColor: "#0D6EFD",
+                                fill: "#0D6EFD",
                                 showLine: true,
                                 tension: 0.5,
-                                borderColor: " blue",
+                                borderColor: "#0D6EFD",
                             },
                         ],
                     }}

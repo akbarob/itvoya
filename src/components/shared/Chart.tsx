@@ -62,7 +62,7 @@ const MyChart = () => {
                         {
                             label: "Data",
                             data: [100, 90, 80, 60, 52, 49, 46, 38, 35, 20],
-                            backgroundColor: "blue",
+                            backgroundColor: "#0D6EFD",
                             barThickness: 20,
                         },
                     ],

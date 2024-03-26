@@ -67,7 +67,7 @@ const PerformanceChart = () => {
                                 100, 20, 15, 95, 68, 32, 100, 20, 75, 95, 68,
                                 32, 10,
                             ],
-                            backgroundColor: "gray",
+                            backgroundColor: "#667185",
                             barThickness: 10,
                         },
                         {
@@ -78,7 +78,7 @@ const PerformanceChart = () => {
                             ],
                             barThickness: 10,
 
-                            backgroundColor: "green",
+                            backgroundColor: "#40B869",
                         },
                         {
                             label: "Data",
@@ -88,7 +88,7 @@ const PerformanceChart = () => {
                             ],
                             barThickness: 10,
 
-                            backgroundColor: "yellow",
+                            backgroundColor: "#FFBD00",
                         },
                     ],
                 }}
