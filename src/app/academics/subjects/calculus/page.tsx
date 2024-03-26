@@ -283,11 +283,96 @@ export default function Page() {
                         </div>
 
                         <div className="grid grid-cols-2 gap-4">
-                            <div className="bg-white rounded-[6px] p-4">
-                                <PerformanceTrend />
+                            <div className="bg-white rounded-[6px] p-4 text-black">
+                                <div className="flex  items-center mb-5">
+                                    <p> Outstanding Assignments</p>
+                                </div>
+                                <div className="gap-2 h-[56px] bg-[#00004A] text-white w-full justify-start items-center grid grid-cols-2 px-2 place-content-center place-items-center">
+                                    <div className="w-full capitalize flex gap-2 items-center ">
+                                        <p>Students Name</p>{" "}
+                                        <Image
+                                            src="/assets/images/upDown.png"
+                                            alt="edit"
+                                            width={100}
+                                            height={100}
+                                            className="h-[20px] w-[20px]"
+                                        />{" "}
+                                    </div>
+                                    <div className="w-[150px] capitalize flex gap-2 items-center ">
+                                        <p>Submission</p>{" "}
+                                        <Image
+                                            src="/assets/images/upDown.png"
+                                            alt="edit"
+                                            width={100}
+                                            height={100}
+                                            className="h-[20px] w-[20px]"
+                                        />{" "}
+                                    </div>
+                                </div>
+                                {teacher.map((item, i) => (
+                                    <div
+                                        key={i}
+                                        className="grid grid-cols-2 gap-2 h-[56px] place-content-center place-items-center odd:bg-white even:bg-[#F0F0F0] w-full justify-between px-2">
+                                        <div className="w-[150px] capitalize text-black">
+                                            {item.name}
+                                        </div>
+                                        <div className="capitalize">
+                                            <button className="text-warning bg-warning/10 px-3 py-2 capitalize font-semibold">
+                                                {" "}
+                                                Pending
+                                            </button>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
-                            <div className="bg-white rounded-[6px] p-4">
-                                <GradeChart />
+                            <div className="bg-white rounded-[6px] p-4 text-black">
+                                <div className="flex  items-center  mb-5">
+                                    <p>Submitted Assignments</p>
+                                </div>
+                                <div className="gap-2 h-[56px] bg-[#00004A] text-white w-full justify-start items-center grid grid-cols-2 px-2 place-content-center place-items-center">
+                                    <div className="w-full capitalize flex gap-2 items-center ">
+                                        <p>Students Name</p>{" "}
+                                        <Image
+                                            src="/assets/images/upDown.png"
+                                            alt="edit"
+                                            width={100}
+                                            height={100}
+                                            className="h-[20px] w-[20px]"
+                                        />{" "}
+                                    </div>
+                                    <div className="w-[150px] capitalize flex gap-2 items-center ">
+                                        <p>Draging</p>{" "}
+                                        <Image
+                                            src="/assets/images/upDown.png"
+                                            alt="edit"
+                                            width={100}
+                                            height={100}
+                                            className="h-[20px] w-[20px]"
+                                        />{" "}
+                                    </div>
+                                </div>
+                                {teacher.map((item, i) => (
+                                    <div
+                                        key={i}
+                                        className="grid grid-cols-2 gap-2 h-[56px] place-content-center place-items-center odd:bg-white even:bg-[#F0F0F0] w-full justify-between px-2">
+                                        <div className="w-[150px] capitalize text-black">
+                                            {item.name}
+                                        </div>
+
+                                        <div className="capitalize">
+                                            <button className="text-[#0D6EFD]  px-3 py-2 capitalize font-semibold flex gap-4 items-center">
+                                                <Image
+                                                    src="/assets/images/edit.png"
+                                                    alt="edit"
+                                                    width={100}
+                                                    height={100}
+                                                    className="h-[20px] w-[20px]"
+                                                />
+                                                <p>Grading</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>
